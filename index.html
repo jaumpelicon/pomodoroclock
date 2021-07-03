@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <h1>POMODORO CLOCK FOR JERA ACADEMY</h1>
+    <title>Pomodoro Clock For Jera academy </title>
+    <img src = "jera logo.jpg" alt = "Jera"  align = "center"> 
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    img{
+     margin-left: 34%;
+    }
+    h1{
+     margin-left: 34%;
+    }
+  </style>
+  <body>
+    <main class="app">
+      <progress id="js-progress" value="0"></progress>
+      <div class="progress-bar"></div>
+      <div class="timer">
+        <div class="button-group mode-buttons" id="js-mode-buttons">
+          <button
+            data-mode="pomodoro"
+            class="button active mode-button"
+            id="js-pomodoro"
+          >
+            Pomodoro
+          </button>
+          <button
+            data-mode="shortBreak"
+            class="button mode-button"
+            id="js-short-break"
+          >
+            Pausa curta
+          </button>
+          <button
+            data-mode="longBreak"
+            class="button mode-button"
+            id="js-long-break"
+          >
+            Pausa longa
+          </button>
+        </div>
+        <div class="clock" id="js-clock">
+          <span id="js-minutes">25</span>
+          <span class="separator">:</span>
+          <span id="js-seconds">00</span>
+        </div>
+        <button class="main-button" data-action="start" id="js-btn">
+          Começar
+        </button>
+      </div>
+    </main>
+    <div class="hidden">
+      <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
+      <audio src="break.mp3" data-sound="shortBreak"></audio>
+      <audio src="break.mp3" data-sound="longBreak"></audio>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

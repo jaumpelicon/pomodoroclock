@@ -1,0 +1,23 @@
+{
+  "name": "pomodoroclock",
+  "version": "1.0.0",
+  "description": "A pomodoro timer application built with JavaScript for jera academy",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx browser-sync start -sw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopelison/Pomodoro-Clock-Jera-Academy"
+  },
+  "keywords": [
+    "pomodoro",
+    "javascript"
+  ],
+  "author": "João Carlos Peliçon Ramos <https://freshman.tech/pomodoro-timer>",
+  "license": "SPDX ",
+  "bugs": {
+    "url": "https://github.com/joaopelison/Pomodoro-Clock-Jera-Academy"
+  },
+  "homepage": "https://github.com/joaopelison"
+}
